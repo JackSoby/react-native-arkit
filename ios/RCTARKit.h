@@ -127,7 +127,7 @@ typedef void (^RCTARKitReject)(NSString *code, NSString *message, NSError *error
 #endif
 
 
-public class swiftTest: NSString {
+class swiftTest: NSString {
     print("WOW! this is all the way from swift!");
     return "WOW! this is all the way from swift!";
 }
