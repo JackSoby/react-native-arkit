@@ -345,7 +345,7 @@ static RCTARKit *instance = nil;
     return vectorToJson(cameraPosition);
 }
 
-- (NSString)swfitTest {
+- (NSString)swiftTest {
     NsString *myString = [swiftTest];
 
     return myString;

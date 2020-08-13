@@ -452,7 +452,7 @@ RCT_EXPORT_METHOD(getCameraPosition:(RCTPromiseResolveBlock)resolve reject:(RCTP
 
 
 RCT_EXPORT_METHOD(swiftTest:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
-    resolve([[ARKit sharedInstance] swfitTest]);
+    resolve([[ARKit sharedInstance] swiftTest]);
 }
 
 RCT_EXPORT_METHOD(addAnchorByLocation:(NSString *)anchorName  locationLat:(float)locationLat locationLong:(float)locationLong landmarkLat:(float)landmarkLat landmarkLong:(float)landmarkLong locationHorizontalAccuracy:(float)locationHorizontalAccuracy landmarkHorizontalAccuracy:(float)landmarkHorizontalAccuracy locationVerticalAccuracy:(float)locationVerticalAccuracy landmarkVerticalAccuracy:(float)landmarkVerticalAccuracy locationAltitude:(float)locationAltitude landmarkAltitude:(float)landmarkAltitude resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {

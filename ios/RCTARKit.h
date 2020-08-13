@@ -118,10 +118,6 @@ typedef void (^RCTARKitReject)(NSString *code, NSString *message, NSError *error
 
 @end
 
-@objc public class swiftTest {
-    print("WOW! this is all the way from swift!");
-    return "WOW! this is all the way from swift!";
-}
 
 #if __has_include("RCTARKitARCL.h")
 #import "RCTARKitARCL.h"
@@ -129,3 +125,9 @@ typedef void (^RCTARKitReject)(NSString *code, NSString *message, NSError *error
 #else
 @compatibility_alias ARKit RCTARKit;
 #endif
+
+
+public class swiftTest: NSString {
+    print("WOW! this is all the way from swift!");
+    return "WOW! this is all the way from swift!";
+}
