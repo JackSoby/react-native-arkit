@@ -112,6 +112,7 @@ static RCTARKit *instance = nil;
     return self;
 }
 
+
 - (void)receivedDataHandler:(NSData *)data PeerID:(MCPeerID *)peerID
 {
     id parsedJSON;
@@ -344,6 +345,13 @@ static RCTARKit *instance = nil;
     return vectorToJson(cameraPosition);
 }
 
+- (NSString)swfitTest {
+    NsString *myString = [swiftTest];
+
+    return myString;
+}
+
+
 - (double)radiansFromDegrees:(float)degrees
 {
     return degrees * (M_PI/180.0);    
@@ -353,6 +361,8 @@ static RCTARKit *instance = nil;
 {
     return radians * (180.0/M_PI);
 }
+
+
 
 - (void)getArAnchorPosition:(CLLocation *)location landmark:(CLLocation *)landmark anchorName:(NSString  *)anchorName {
 
@@ -622,9 +632,11 @@ UIImage* rotate(UIImage* src, UIImageOrientation orientation)
 #pragma mark - plane hit detection
 
 - (void)hitTestPlane:(const CGPoint)tapPoint types:(ARHitTestResultType)types resolve:(RCTARKitResolve)resolve reject:(RCTARKitReject)reject {
-    
     resolve([self getPlaneHitResult:tapPoint types:types]);
 }
+
+
+
 
 
 

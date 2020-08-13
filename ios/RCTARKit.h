@@ -118,7 +118,10 @@ typedef void (^RCTARKitReject)(NSString *code, NSString *message, NSError *error
 
 @end
 
-
+public class swiftTest: NSString {
+    print("WOW! this is all the way from swift!")
+    return "WOW! this is all the way from swift!";
+}
 
 #if __has_include("RCTARKitARCL.h")
 #import "RCTARKitARCL.h"
